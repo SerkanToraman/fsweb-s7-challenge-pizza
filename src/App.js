@@ -1,10 +1,21 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import './App.css';
+
+
+import MainPage from "./Pages/MainPage";
+import SiparsiFormu from "./Pages/SiparisFormu";
+import SiparisAlindi from "./Pages/SiparisAlindi";
 
 const App = () => {
   return (
     <>
-      <h1>Teknolojik Yemekler</h1>
-      <p>Burdaki kodu silip kendi headerınızı ekleyebilirsiniz</p>
+    <Routes>   
+      <Route path = "/success" element={<SiparisAlindi/>}/> 
+      <Route path = "/pizza" element={<SiparsiFormu/>}/>
+      <Route exact path = "/" element={<MainPage/>}/>
+    </Routes>
     </>
   );
 };
