@@ -46,7 +46,7 @@ const SiparisFormu = () => {
   const[data,setData]=useState({
     isim:"",
     boyut:{name:"",price:0},
-    hamur:"",
+    hamur:{name:"",price:0},
     ekMalzemeL:[{name:"",price:0}],
     not:"",
     pizzaAdet:1,

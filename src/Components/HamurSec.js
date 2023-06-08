@@ -24,8 +24,7 @@ const HamurSec = ({malzemeFunction,validateForm,formErrors}) => {
   const [obje,setObje] = useState({name:"",price:0});
 
   const changeHandler=(e)=>{
-    setObje({name:e.target.options[e.target.selectedIndex].title,price:parseInt(e.target.value)})
-    
+    setObje({name:e.target.options[e.target.selectedIndex].title,price:Number(e.target.value)})   
   }
 
   let mainKey = "hamur";
@@ -34,7 +33,6 @@ const HamurSec = ({malzemeFunction,validateForm,formErrors}) => {
     validateForm("hamur",obje);
   },[obje]); 
    
-  
   
 
   return(

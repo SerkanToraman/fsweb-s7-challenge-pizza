@@ -30,10 +30,9 @@ const Main =styled.div`
   `
 const SiparisCard = ({data,isFormValid}) =>{
 const navigate =useNavigate();
-const[boyutHamurFiyat,setBoyutHamurFiyat]=useState();
-const[ekMalzemeFiyat,setEkMalzemeFiyat]=useState();
+const[boyutHamurFiyat,setBoyutHamurFiyat]=useState(0);
+const[ekMalzemeFiyat,setEkMalzemeFiyat]=useState(0);
 const[toplamFiyat,setToplamFiyat]=useState(0);
-
 
 useEffect(()=>{
 setEkMalzemeFiyat(data.ekMalzemeL.reduce((toplam,rakam)=>{
