@@ -18,12 +18,14 @@ const MainPage = () => {
   return(
     <RootStyle>
         <div className="main">   
-          <h2 className="row1 center">Teknolojik Yemekler</h2>
+          <h2 className="row1 ">Teknolojik Yemekler</h2>
           <h1 className="row2 center">KOD ACIKTIRIR <br/>
               PIZZA, DOYURUR
           </h1>
-          
-          <Link to="/pizza"><button class="buttonMain center" id="order-pizza">ACIKTIM</button></Link> 
+
+          <div className="buttonMain">
+          <Link to="/pizza"><button class="button" id="order-pizza">ACIKTIM</button></Link> 
+          </div>
           <div className="img">
             <img src={require("../Assets/adv-aseets/adv-form-banner.png")}
             alt ="Ana Sayfa Pizza" style={{transform:'rotate(180deg)'}}/>
