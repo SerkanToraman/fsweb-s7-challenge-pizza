@@ -22,6 +22,7 @@ const MainPage = () => {
           <h1 className="row2 center">KOD ACIKTIRIR <br/>
               PIZZA, DOYURUR
           </h1>
+          
           <Link to="/pizza"><button class="buttonMain center" id="order-pizza">ACIKTIM</button></Link> 
           <div className="img">
             <img src={require("../Assets/adv-aseets/adv-form-banner.png")}
