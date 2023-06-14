@@ -75,13 +75,15 @@ h1,h2{
   .row1{
   flex-grow: 1.5;
   align-items: flex-end;
-  padding: none;
+  padding: 0px;
   font-size: 1rem;
+  margin-bottom: 0;
   }
 
   .row2{
     flex-grow: 1;
     font-size: 2rem;
+    margin-bottom: 0;
   }
   .buttonMain{
     flex-grow: 3;
@@ -95,10 +97,11 @@ h1,h2{
   }
   .img{
     flex-grow: 1;
+    margin-top:0;
   }
   .img img{
     width: 100%;
-    scale: 1.05;
+    scale: 1.03;
   }
   
 
