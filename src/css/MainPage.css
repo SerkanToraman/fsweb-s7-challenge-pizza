@@ -68,7 +68,7 @@ h1,h2{
 
 @media (max-width :800px){
   .main{
-    height:100vh;
+    height:100%;
     width: 100vw;
   
   }
