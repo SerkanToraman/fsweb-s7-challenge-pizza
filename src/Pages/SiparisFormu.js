@@ -30,6 +30,7 @@ font-weight: bold;
 font-size:1.8rem;
 padding-top:1.5rem;
 padding-bottom:2rem;
+text-align:center;
 `
 const PriceTitle  = styled.div`
 font-weight: bold;
