@@ -12,10 +12,10 @@ const Main =styled.div`
 const NumberText  = styled.div`
 display:inline-block;
 font-size:1.2rem;
+display:flex;
+align-items:center;
 padding-left:1rem;
 padding-right:1rem;
-padding-top:0.45rem;
-padding-bottom:0.45rem;
 border:1px solid #F1F1F1;
 `
 

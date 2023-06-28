@@ -2,5 +2,8 @@
 .boldGray{
   color:#5F5F5F;
   font-weight: bold;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 

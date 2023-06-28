@@ -6,7 +6,7 @@ import '../css/OrderPageHeader.css'
 
 const HeaderRootStyle  = styled.div`
 background:#CE2829;
-height:22vh;
+height:100%;
 `
 const Main =styled.div`
 width: 60vw;  

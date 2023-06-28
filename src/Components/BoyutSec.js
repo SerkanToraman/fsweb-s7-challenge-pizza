@@ -41,7 +41,7 @@ const BoyutSec = ({malzemeFunction,validateForm,formErrors}) => {
   <>
   <Title>Boyut Seç<Red>*</Red></Title>
   
-  <Form className="gray"> 
+  <Form className="gray alignment"> 
     <Row>
       <Col>
         <FormGroup>
