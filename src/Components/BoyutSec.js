@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from "react";
-import { Form, FormGroup, Input, Label} from "reactstrap";
+import { Form, FormGroup, Input, Label,Row,Col} from "reactstrap";
 import styled from 'styled-components';
 import "../css/BoyutHamurText.css"
 
@@ -42,40 +42,44 @@ const BoyutSec = ({malzemeFunction,validateForm,formErrors}) => {
   <Title>Boyut Seç<Red>*</Red></Title>
   
   <Form className="gray"> 
-    <FormGroup>
-      <Input
-            id="kucuk"
-            name="boyut"
-            type="radio"
-            value="40"
-            onChange= {changeHandler}
-            invalid={!!formErrors.boyut} 
-          />
-      <Label htmlFor="kucuk" >&nbsp;&nbsp;Küçük 40₺</Label>
-    </FormGroup>
-    <FormGroup>
-      <Input
-            id="orta"
-            name="boyut"
-            type="radio"
-            value="50"
-            onChange= {changeHandler}
-            invalid={!!formErrors.boyut} 
-          />
-      <Label htmlFor="orta">&nbsp;&nbsp;Orta 50₺</Label>
-    </FormGroup>
-    <FormGroup>
-      <Input
-            id="buyuk"
-            name="boyut"
-            type="radio"
-            value="60"
-            onChange= {changeHandler}
-            invalid={!!formErrors.boyut} 
-          />
-      <Label htmlFor="buyuk">&nbsp;&nbsp;Büyük 60₺</Label>
-    </FormGroup>
-    {/* {formErrors.boyut && <Feedback>{formErrors.boyut} </Feedback>} */}
+    <Row>
+      <Col>
+        <FormGroup>
+          <Input
+                id="kucuk"
+                name="boyut"
+                type="radio"
+                value="40"
+                onChange= {changeHandler}
+                invalid={!!formErrors.boyut} 
+              />
+          <Label htmlFor="kucuk" >&nbsp;&nbsp;Küçük 40₺</Label>
+        </FormGroup>
+        <FormGroup>
+          <Input
+                id="orta"
+                name="boyut"
+                type="radio"
+                value="50"
+                onChange= {changeHandler}
+                invalid={!!formErrors.boyut} 
+              />
+          <Label htmlFor="orta">&nbsp;&nbsp;Orta 50₺</Label>
+        </FormGroup>
+        <FormGroup>
+          <Input
+                id="buyuk"
+                name="boyut"
+                type="radio"
+                value="60"
+                onChange= {changeHandler}
+                invalid={!!formErrors.boyut} 
+              />
+          <Label htmlFor="buyuk">&nbsp;&nbsp;Büyük 60₺</Label>
+        </FormGroup>
+        {/* {formErrors.boyut && <Feedback>{formErrors.boyut} </Feedback>} */}
+      </Col>
+    </Row>
   </Form>
   </>
   )

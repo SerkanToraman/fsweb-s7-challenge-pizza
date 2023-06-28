@@ -100,13 +100,14 @@ const EkMalzemeler = ({malzemeFunction,validateForm,formErrors}) => {
 
 <Form>
 
-  <Row xs="3">
+  <Row xs={1} sm={1} md={2} lg={3}>
 
         { 
             checklist.map((p,i) => {
               return(
                 <Col key={i}>
-                  <FormGroup className="boldGray">
+                  <FormGroup className="boldGray checks">
+                  <div className="checks">
                   <Input
                         id={i}
                         name={p.name}
@@ -116,7 +117,8 @@ const EkMalzemeler = ({malzemeFunction,validateForm,formErrors}) => {
                         onChange= {changeHandler}
                         invalid={!!formErrors.ekMalzemeL}  
                       /> 
-                      <Label htmlFor={p.name}>&nbsp;&nbsp;{`${p.name} ${p.price}₺`}</Label>    
+                      <Label htmlFor={p.name}>&nbsp;&nbsp;{`${p.name} ${p.price}₺`}</Label> 
+                    </div>   
                   </FormGroup>
                 </Col>
               )

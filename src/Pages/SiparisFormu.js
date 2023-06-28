@@ -21,7 +21,7 @@ flex-direction: column;
 `
 const Content =styled.div` 
 margin: auto;
-width: 60vw; 
+width: 65vw; 
 display: flex;
 flex-direction: column;
 `
@@ -150,13 +150,13 @@ return(
       <Isim {...Props}/>
     </Col>
   </Row> 
-  <Row>
-    <Col>
-      <BoyutSec {...Props}/>
-    </Col>
-    <Col>
-      <HamurSec {...Props}/>
-    </Col>
+  <Row xs={1} md={2}>
+      <Col>
+        <BoyutSec {...Props}/>
+      </Col>
+      <Col>
+        <HamurSec {...Props}/>
+      </Col>
   </Row>
   <Row>
         <Col>
@@ -170,11 +170,11 @@ return(
     </Col>
   </Row> 
   <hr/>
-  <Row>
-    <Col xs="4">
+  <Row >
+    <Col xs="12" md={4}>
       <SiparisAdet {...Props} />
     </Col>
-    <Col xs="8">
+    <Col xs="12" md={8}>
       <SiparisCard {...Props}/>
     </Col>
   </Row> 
