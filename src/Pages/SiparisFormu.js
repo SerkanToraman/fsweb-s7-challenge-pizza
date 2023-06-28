@@ -60,7 +60,7 @@ const SiparisFormu = () => {
       price:yup.number().required().min(1,"Lütfen Hamur Tipi Seçininiz."),
     }),
     boyut:yup.object().shape({
-      name:yup.string().required(),
+      name:yup.string().required().min(1,"Lütfen Boyut Tipi Seçininiz."),
       price:yup.number().required().min(1,"Lütfen Boyut Tipi Seçininiz."),
     }),
   });
@@ -131,7 +131,7 @@ return(
   </Row>  
   <Row>
     <Col xs="8">
-      <PriceTitle xs="">Min. 60₺</PriceTitle>
+      <PriceTitle>Min. 60₺</PriceTitle>
     </Col>
     <Col xs="2">
       <PriceText>4.9</PriceText>

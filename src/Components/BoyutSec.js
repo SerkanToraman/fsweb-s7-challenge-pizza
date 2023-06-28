@@ -76,10 +76,10 @@ const BoyutSec = ({malzemeFunction,validateForm,formErrors}) => {
                 invalid={!!formErrors.boyut} 
               />
           <Label htmlFor="buyuk">&nbsp;&nbsp;Büyük 60₺</Label>
-        </FormGroup>
-        {/* {formErrors.boyut && <Feedback>{formErrors.boyut} </Feedback>} */}
+        </FormGroup> 
       </Col>
     </Row>
+    {/* {formErrors.boyut && <Feedback>{formErrors.boyut} </Feedback>} */}
   </Form>
   </>
   )

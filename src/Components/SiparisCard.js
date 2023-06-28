@@ -26,7 +26,12 @@ const Main =styled.div`
   color:#5F5F5F;
   font-size:1rem;
   padding-bottom:1rem;
-
+  `
+  const ErrorText  = styled.div`
+  color:#dc3545;
+  font-size:0.875em;
+  padding-top:0.5rem;
+  text-align:center;
   `
 const SiparisCard = ({data,isFormValid}) =>{
 const navigate =useNavigate();
@@ -96,6 +101,7 @@ return(
       }}>
         
         <button type="submit" disabled= {!isFormValid}>SİPARİŞ VER</button>
+        {!isFormValid && <ErrorText>Eksik Bilgileri Tamamlayiniz</ErrorText>}
       </Form>
   
   </Main>
